@@ -84,10 +84,10 @@ section {
 }
 
 .btn-primary{
-    --bs-btn-bg: var(--jg-theme-600);
-    --bs-btn-border-color: var(--jg-theme-700);
-    --bs-btn-hover-bg: var(--jg-theme-700);
-    --bs-btn-hover-border-color: var(--jg-theme-700);
+    --bs-btn-bg: var(--jg-theme-700);
+    --bs-btn-border-color: var(--jg-theme-800);
+    --bs-btn-hover-bg: var(--jg-theme-800);
+    --bs-btn-hover-border-color: var(--jg-theme-800);
 }
 
 /* end Element overrides */
@@ -121,6 +121,7 @@ section {
 
 .footerLogo{
     margin-left: -2rem;
+    height: 100%;
 }
 
 .mainTitle,
@@ -150,19 +151,46 @@ section {
 
 .section-page {
     padding-top: 5rem;
-    padding-bottom: 5rem;
-
+    padding-bottom: 8rem;
+    position: relative;
+    overflow: visible;
+    margin-top: -3rem;
 }
 
-.section-page:nth-child(even) {
-    background-color: var(--jg-theme-100);
+.section-page:nth-child(even),
+.section-page:nth-child(even)>.container::after {
+    background-color: var(--jg-theme-500);
 }
 
-.section-page:nth-child(odd) {
-    background-color: var(--jg-theme-150);
+.section-page:nth-child(odd),
+.section-page:nth-child(odd)>.container::after {
+    background-color: var(--jg-theme-300);
 }
 
 /* end main content */
+
+/* Start section dividers */
+
+.section-page>.container::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 3rem;
+    /* clip-path: ellipse(50% 100% at top center); */
+    z-index: 1;
+}
+
+.section-page:nth-child(even)>.container::after {
+    clip-path: polygon(0% 0%, 100% 0%, 0% 100% );
+}
+
+.section-page:nth-child(odd)>.container::after {
+    clip-path: polygon(100% 100%, 100% 0%, 0% 0% );
+}
+
+/* End section divider */
 
 /* start footer styles */
 .socialicons {

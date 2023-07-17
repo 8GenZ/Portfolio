@@ -25,17 +25,88 @@
     <!-- custom css -->
     <link rel="stylesheet" href="/css/site.css" />
     <link rel="stylesheet" href="/css/iconCard.css" />
+    <link rel="stylesheet" href="/css/blogCard.css" />
+    <link rel="stylesheet" href="/css/menuPill.css" />
     <!-- custom themes -->
     <!-- <link rel="stylesheet" href="/css/themeColors.css"/> -->
     <link rel="stylesheet" href="/css/hovercard.css" />
 
     <!-- favicon -->
-    <link rel="shortcut icon" href="img/favicon-32x32.png" type="image/x-icon" />
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
 </head>
 
 <body>
+    <!-- navbar -->
+    <div id="menuPillContainer" class=" navbar navbar-dark">
+        <nav id="menuPill" class="navbar-nav text-light">
+            <div class="nav-item">
+                <a class="nav-link active" href="#home" data-bs-toggle="tooltip" data-bs-placement="bottom"
+                    data-bs-title="Home" data-bs-custom-class="nav-tooltip">
+                    <div class="icon-container">
+                        <i class="bi bi-house-fill"></i>
+                    </div>
+                    <span class="menu-label">home</span>
+                </a>
+            </div>
+            <div class="nav-item">
+                <a class="nav-link" href="#about" data-bs-toggle="tooltip" data-bs-placement="bottom"
+                    data-bs-title="About" data-bs-custom-class="nav-tooltip">
+                    <div class="icon-container">
+                        <i class="bi bi-info-circle-fill"></i>
+                    </div>
+                    <span class="menu-label">About Me</span>
+                </a>
+            </div>
+            <div class="nav-item">
+                <a class="nav-link" href="#skills" data-bs-toggle="tooltip" data-bs-placement="bottom"
+                    data-bs-title="Skills" data-bs-custom-class="nav-tooltip">
+                    <div class="icon-container">
+                        <i class="bi bi-wrench-adjustable"></i>
+                    </div>
+                    <span class="menu-label">Skills</span>
+                </a>
+            </div>
+            <div class="nav-item">
+                <a class="nav-link" href="#projects" data-bs-toggle="tooltip" data-bs-placement="bottom"
+                    data-bs-title="Projects" data-bs-custom-class="nav-tooltip">
+                    <div class="icon-container">
+                        <i class="bi bi-braces-asterisk"></i>
+                    </div>
+                    <span class="menu-label">Projects</span>
+                </a>
+            </div>
+            <div class="nav-item">
+                <a class="nav-link" href="#challenges" data-bs-toggle="tooltip" data-bs-placement="bottom"
+                    data-bs-title="Challenges" data-bs-custom-class="nav-tooltip">
+                    <div class="icon-container">
+                        <i class="bi bi-terminal"></i>
+                    </div>
+                    <span class="menu-label">Challenges</span>
+                </a>
+            </div>
+            <div class="nav-item">
+                <a class="nav-link" href="#blog" data-bs-toggle="tooltip" data-bs-placement="bottom"
+                    data-bs-title="Blog" data-bs-custom-class="nav-tooltip">
+                    <div class="icon-container">
+                        <i class="bi bi-quote"></i>
+                    </div>
+                    <span class="menu-label">Blog</span>
+                </a>
+            </div>
+            <div class="nav-item">
+                <a class="nav-link" href="#contact" data-bs-toggle="tooltip" data-bs-placement="bottom"
+                    data-bs-title="Contact" data-bs-custom-class="nav-tooltip">
+                    <div class="icon-container">
+                        <i class="bi bi-envelope-fill"></i>
+                    </div>
+                    <span class="menu-label">Contact</span>
+                </a>
+            </div>
+        </nav>
+    </div>
 
-    <main>
+
+    <main data-bs-spy="scroll" data-bs-target="#menuPill">
         <section id="home">
             <div id="homeCover">
                 <div class="mainHeader">
@@ -219,8 +290,8 @@
                         <div class="hc-wrapper">
                             <div class="hc-card">
                                 <picture>
-                                    <source media="(min-width: 992px)" srcset="/img/logos/BugTracker_600.jpg" />
-                                    <img src="/img/logos/BugTracker_200.jpg" />
+                                    <source media="(min-width: 992px)" srcset="/img/logos/New bug burner.png" />
+                                    <img src="/img/logos/New bug burner.png" />
                                 </picture>
                                 <div class="hc-content">
                                     <p>
@@ -239,8 +310,8 @@
                         <div class="hc-wrapper">
                             <div class="hc-card">
                                 <picture>
-                                    <source media="(min-width: 992px)" srcset="/img/logos/Contact_Pro.png" />
-                                    <img src="/img/logos/Contact_Pro.png" />
+                                    <source media="(min-width: 992px)" srcset="/img/logos/Contact Pro.png" />
+                                    <img src="/img/logos/Contact Pro.png" />
                                 </picture>
                                 <div class="hc-content">
                                     <p>
@@ -259,8 +330,8 @@
                         <div class="hc-wrapper">
                             <div class="hc-card">
                                 <picture>
-                                    <source media="(min-width: 992px)" srcset="/img/logos/Tech_Talk.png" />
-                                    <img src="/img/logos/Tech_Talk.png" />
+                                    <source media="(min-width: 992px)" srcset="/img/logos/Code Crave.png" />
+                                    <img src="/img/logos/Code Crave.png" />
                                 </picture>
                                 <div class="hc-content">
                                     <p>
@@ -407,10 +478,195 @@
 
         </section>
         <section class="section-page" id="blog">
-            <h2>Blog</h2>
+            <div class="container">
+                <h2 class="display-1 mb-5 text-capitalize">
+                    Stuff I write about
+                </h2>
+                <p>
+                    I write on my blog on a regular basis. I think it's important to share your knowledge with others.
+                </p>
+                <div id="blogs">
+                    <!-- Top blog -->
+                    <article class="card mb-4 blog-article">
+                        <div class="row blog-row g-0">
+                            <div class="col-lg-4 blog-header">
+                                <!-- image -->
+                                <a href="#" class="blog-image-link">
+                                    <img src="/img/Blog/Blog_FlyingGirl.jpg" class="blog-image" alt="Blog post image" />
+                                </a>
+                                <div class="blog-date">
+                                    <div class="blog-day">11</div>
+                                    <div class="blog-month">January</div>
+                                </div>
+                            </div>
+                            <div class="col-lg-8">
+                                <!-- title and text preview -->
+                                <div class="card-body h-100 d-flex flex-column justify-content-around">
+                                    <h3 class="card-title">MAKE SQL QUREIS FLY</h3>
+                                    <p class="card-text line-clamp">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, itaque
+                                        perferendis. Incidunt voluptatibus, neque doloribus beatae veritatis architecto
+                                        eaque soluta earum delectus dolore aliquam, id quod quasi, perferendis nisi
+                                        assumenda.
+                                    </p>
+                                    <div>
+                                        <a href="#" class="btn btn-primary">Read More</a>
+                                    </div>
+                                    <p class="card-text">
+                                        <small class="text-muted">Published 3 days ago</small>
+                                    </p>
+                                </div>
+
+                            </div>
+                        </div>
+                    </article>
+                    <!-- Second Blog  -->
+                    <article class="card mb-4 blog-article">
+                        <div class="row blog-row g-0">
+                            <div class="col-lg-4 blog-header">
+                                <!-- image -->
+                                <a href="#" class="blog-image-link">
+                                    <img src="/img/Blog/Blog_Database.jpg" class="blog-image" alt="Blog post image" />
+                                </a>
+                                <div class="blog-date">
+                                    <div class="blog-day">12</div>
+                                    <div class="blog-month">Febuary</div>
+                                </div>
+                            </div>
+                            <div class="col-lg-8">
+                                <!-- title and text preview -->
+                                <div class="card-body h-100 d-flex flex-column justify-content-around">
+                                    <h3 class="card-title">STORING IMAGES IN A DB</h3>
+                                    <p class="card-text line-clamp">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, itaque
+                                        perferendis. Incidunt voluptatibus, neque doloribus beatae veritatis architecto
+                                        eaque soluta earum delectus dolore aliquam, id quod quasi, perferendis nisi
+                                        assumenda.
+                                    </p>
+                                    <div>
+                                        <a href="#" class="btn btn-primary">Read More</a>
+                                    </div>
+                                    <p class="card-text">
+                                        <small class="text-muted">Published 3 days ago</small>
+                                    </p>
+                                </div>
+
+                            </div>
+                        </div>
+                    </article>
+                    <!-- Third Blog -->
+                    <article class="card mb-4 blog-article">
+                        <div class="row blog-row g-0">
+                            <div class="col-lg-4 blog-header">
+                                <!-- image -->
+                                <a href="#" class="blog-image-link">
+                                    <img src="/img/Blog/Blog_CodeTag.jpg" class="blog-image" alt="Blog post image" />
+                                </a>
+                                <div class="blog-date">
+                                    <div class="blog-day">13</div>
+                                    <div class="blog-month">March</div>
+                                </div>
+                            </div>
+                            <div class="col-lg-8">
+                                <!-- title and text preview -->
+                                <div class="card-body h-100 d-flex flex-column justify-content-around">
+                                    <h3 class="card-title">THE POWER OF CSS</h3>
+                                    <p class="card-text line-clamp">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, itaque
+                                        perferendis. Incidunt voluptatibus, neque doloribus beatae veritatis architecto
+                                        eaque soluta earum delectus dolore aliquam, id quod quasi, perferendis nisi
+                                        assumenda.
+                                    </p>
+                                    <div>
+                                        <a href="#" class="btn btn-primary">Read More</a>
+                                    </div>
+                                    <p class="card-text">
+                                        <small class="text-muted">Published 3 days ago</small>
+                                    </p>
+                                </div>
+
+                            </div>
+                        </div>
+                    </article>
+                    <!-- Bottom Blog -->
+                    <article class="card mb-4 blog-article">
+                        <div class="row blog-row g-0">
+                            <div class="col-lg-4 blog-header">
+                                <!-- image -->
+                                <a href="#" class="blog-image-link">
+                                    <img src="/img/Blog/Blog_DecisionRoad.jpg" class="blog-image"
+                                        alt="Blog post image" />
+                                </a>
+                                <div class="blog-date">
+                                    <div class="blog-day">14</div>
+                                    <div class="blog-month">April</div>
+                                </div>
+                            </div>
+                            <div class="col-lg-8">
+                                <!-- title and text preview -->
+                                <div class="card-body h-100 d-flex flex-column justify-content-around">
+                                    <h3 class="card-title">SPA VS MPA FRAMEWORKS</h3>
+                                    <p class="card-text line-clamp">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, itaque
+                                        perferendis. Incidunt voluptatibus, neque doloribus beatae veritatis architecto
+                                        eaque soluta earum delectus dolore aliquam, id quod quasi, perferendis nisi
+                                        assumenda.
+                                    </p>
+                                    <div>
+                                        <a href="#" class="btn btn-primary">Read More</a>
+                                    </div>
+                                    <p class="card-text">
+                                        <small class="text-muted">Published 3 days ago</small>
+                                    </p>
+                                </div>
+
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
         </section>
-        <section class="section-page" id="contact">
-            <h2>Contact Me</h2>
+        <section class="section-page " id="contact">
+            <h1 class="text-center display-1 mb-5"> LET'S CHAT!</h1>
+            <div class="container">
+                <form action="#">
+                    <div class="row row-cols-1">
+                        <div class="col col-md-6">
+                            <label for="FirstName" class="form-label">First Name</label>
+                            <input class="form-control" name="FirstName" id="FirstName" type="text"
+                                placeholder="First Name" aria-label="First Name" required />
+                        </div>
+                        <div class="col col-md-6">
+                            <label for="LastName" class="form-label">Last Name</label>
+                            <input class="form-control" name="LastName" id="LastName" type="text"
+                                placeholder="Last Name" aria-label="Last Name" required />
+                        </div>
+                        <div class="col col-md-6">
+                            <label for="Email" class="form-label">Email</label>
+                            <input class="form-control" name="Email" id="Email" type="email" placeholder="Email"
+                                aria-label="Email" required />
+                        </div>
+                        <div class="col col-md-6">
+                            <label for="Phone" class="form-label">Phone (optional)</label>
+                            <input class="form-control" name="Phone" id="Phone" type="tel" placeholder="Phone"
+                                aria-label="Phone" />
+                        </div>
+                        <div class="col">
+                            <label for="Subject" class="form-label">Subject</label>
+                            <input class="form-control" name="Subject" id="Subject" type="text" placeholder="Subject"
+                                aria-label="Subject" required />
+                        </div>
+                        <div class="col">
+                            <label for="Message" class="form-label">Message</label>
+                            <textarea class="form-control" name="Message" id="Message" type="text" placeholder="Message"
+                                aria-label="Message" required rows="4"></textarea>
+                        </div>
+                        <div class="text-end">
+                            <button type="submit" class="btn btn-primary mt-2">Submit</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
         </section>
     </main>
 
@@ -472,7 +728,7 @@
                                 </div>
                                 <div class="carousel-inner">
                                     <div class="carousel-item active">
-                                        <img src="/img/logos/BugTracker_600.jpg" class="d-block w-100" alt="Logo">
+                                        <img src="/img/logos/BUG BURNER logo.png" class="d-block w-100" alt="Logo">
                                     </div>
                                     <div class="carousel-item">
                                         <img src="/img/screenshots/BugTrackerScreen1.jpg" class="d-block w-100"
