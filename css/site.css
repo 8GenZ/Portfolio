@@ -65,10 +65,10 @@ h6,
 }
 
 a {
-    color: var(--jg-theme-500);
+    color: var(--jg-theme-400);
 }
 a:hover {
-    color: var(--jg-theme-400);
+    color: var(--jg-theme-300);
 }
 
 main {
@@ -88,6 +88,12 @@ section {
     --bs-btn-border-color: var(--jg-theme-800);
     --bs-btn-hover-bg: var(--jg-theme-800);
     --bs-btn-hover-border-color: var(--jg-theme-800);
+}
+.container-contact {
+    padding: 2rem;
+    background-color: var(--jg-theme-200);
+    border-radius: 1.2rem;
+    box-shadow: 2px 2px 4px rgba(128, 0, 0, 0.4);
 }
 
 /* end Element overrides */
@@ -159,7 +165,7 @@ section {
 
 .section-page:nth-child(even),
 .section-page:nth-child(even)>.container::after {
-    background-color: var(--jg-theme-500);
+    background-color: var(--jg-theme-400);
 }
 
 .section-page:nth-child(odd),
