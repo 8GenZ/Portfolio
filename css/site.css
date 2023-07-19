@@ -23,7 +23,7 @@ font-family: 'Tomorrow', sans-serif;
     --jg-font-size: 1.2rem;
     --jg-font-weight: 400;
     --jg-line-height: 1.5rem;
-    --jg-titile-color: var(--jg-dark-color);
+    --jg-title-color: var(--jg-dark-color);
 
     /* Blue theme */
     --jg-theme-core: #9d5734;
@@ -91,7 +91,7 @@ section {
 }
 .container-contact {
     padding: 2rem;
-    background-color: var(--jg-theme-200);
+    background-color: var(--jg-theme-300);
     border-radius: 1.2rem;
     box-shadow: 2px 2px 4px rgba(128, 0, 0, 0.4);
 }
@@ -165,12 +165,12 @@ section {
 
 .section-page:nth-child(even),
 .section-page:nth-child(even)>.container::after {
-    background-color: var(--jg-theme-400);
+    background-color: var(--jg-theme-300);
 }
 
 .section-page:nth-child(odd),
 .section-page:nth-child(odd)>.container::after {
-    background-color: var(--jg-theme-300);
+    background-color: var(--jg-theme-200);
 }
 
 /* end main content */
