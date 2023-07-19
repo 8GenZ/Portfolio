@@ -136,6 +136,17 @@ section {
     text-transform: uppercase;
 }
 
+
+
+.linkColor{
+    color:var(--jg-theme-600);
+    text-decoration: none;
+}
+
+.linkColor:hover {
+    color:var(--jg-theme-400)
+}
+
 .mainTitle {
     font-family: var(--jg-main-title-font);
     font-size: 2em;
@@ -233,6 +244,10 @@ footer .card {
         letter-spacing: .18rem;
         padding-top: 1rem;
     }
+
+    .aboutImg {
+        height: 300px;
+    }
 }
 
 /* md */
@@ -247,6 +262,10 @@ footer .card {
         line-height: 1.2rem;
         letter-spacing: .18rem;
         padding-top: 1.75rem;
+    }
+
+    .aboutImg {
+        height: 350px;
     }
 }
 
@@ -263,11 +282,23 @@ footer .card {
         letter-spacing: .18rem;
         padding-top: 2rem;
     }
+    .aboutImg {
+        height: 400px;
+    }
 }
 
 /* xl */
-@media (min-width: 1200px) {}
+@media (min-width: 1200px) {
+    .aboutImg {
+        height: 450px;
+    }
+}
+
 
 /* xxl */
-@media (min-width: 1400px) {}
+@media (min-width: 1400px) {
+    .aboutImg {
+        height: 500px;
+    }
+}
 
