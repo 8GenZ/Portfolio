@@ -89,6 +89,12 @@ section {
     --bs-btn-hover-bg: var(--jg-theme-800);
     --bs-btn-hover-border-color: var(--jg-theme-800);
 }
+
+.btn-primary:active,
+.btn-primary:focus {
+    --bs-btn-bg: var(--jg-theme-900);
+ }
+
 .container-contact {
     padding: 2rem;
     background-color: var(--jg-theme-300);
@@ -138,14 +144,14 @@ section {
 
 
 
-.linkColor{
+ .linkColor{
     color:var(--jg-theme-600);
     text-decoration: none;
 }
 
 .linkColor:hover {
     color:var(--jg-theme-400)
-}
+} 
 
 .mainTitle {
     font-family: var(--jg-main-title-font);
