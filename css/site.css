@@ -25,7 +25,7 @@ font-family: 'Tomorrow', sans-serif;
     --jg-line-height: 1.5rem;
     --jg-title-color: var(--jg-dark-color);
 
-    /* Blue theme */
+    /* my theme */
     --jg-theme-core: #9d5734;
     --jg-theme-100: hsl(20, 52%, 91%);
     --jg-theme-150: hsl(20, 6%, 87%);
@@ -182,12 +182,12 @@ section {
 
 .section-page:nth-child(even),
 .section-page:nth-child(even)>.container::after {
-    background-color: var(--jg-theme-300);
+    background-color: var(--jg-theme-200);
 }
 
 .section-page:nth-child(odd),
 .section-page:nth-child(odd)>.container::after {
-    background-color: var(--jg-theme-200);
+    background-color: var(--jg-theme-100);
 }
 
 /* end main content */
