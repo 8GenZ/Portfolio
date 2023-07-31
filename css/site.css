@@ -7,9 +7,9 @@ font-family: 'Tomorrow', sans-serif;
 
 :root {
     /* fonts */
-    --jg-main-title-font:'Tomorrow', sans-serif;
+    --jg-main-title-font: 'Tomorrow', sans-serif;
     --jg-title-font: 'Bebas Neue', sans-serif;
-    --jg-main-subtitle-font:'Tomorrow', sans-serif;
+    --jg-main-subtitle-font: 'Tomorrow', sans-serif;
     --jg-subtitle-font: 'Fira Sans', sans-serif;
     --jg-heading-font: 'Bebas Neue', sans-serif;
     --jg-body-font: 'Roboto', sans-serif;
@@ -51,11 +51,16 @@ body {
 }
 
 h6,
-.h6, h5,
-.h5, h4,
-.h4, h3,
-.h3, h2,
-.h2, h1,
+.h6,
+h5,
+.h5,
+h4,
+.h4,
+h3,
+.h3,
+h2,
+.h2,
+h1,
 .h1 {
     font-family: var(--jg-heading-font);
     font-weight: 700;
@@ -67,6 +72,7 @@ h6,
 a {
     color: var(--jg-theme-400);
 }
+
 a:hover {
     color: var(--jg-theme-300);
 }
@@ -77,13 +83,13 @@ main {
 
 section {
     min-height: 100vh;
-    display:flex;
+    display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
 
-.btn-primary{
+.btn-primary {
     --bs-btn-bg: var(--jg-theme-700);
     --bs-btn-border-color: var(--jg-theme-800);
     --bs-btn-hover-bg: var(--jg-theme-800);
@@ -93,7 +99,7 @@ section {
 .btn-primary:active,
 .btn-primary:focus {
     --bs-btn-bg: var(--jg-theme-900);
- }
+}
 
 .container-contact {
     padding: 2rem;
@@ -121,7 +127,7 @@ section {
     width: 100%;
     position: absolute;
     min-height: 100vh;
-    display:flex;
+    display: flex;
     justify-content: center;
     align-items: center;
 }
@@ -131,7 +137,7 @@ section {
     margin-left: -1em;
 }
 
-.footerLogo{
+.footerLogo {
     margin-left: -2rem;
     height: 100%;
 }
@@ -144,14 +150,14 @@ section {
 
 
 
- .linkColor{
-    color:var(--jg-theme-600);
+.linkColor {
+    color: var(--jg-theme-600);
     text-decoration: none;
 }
 
 .linkColor:hover {
-    color:var(--jg-theme-400)
-} 
+    color: var(--jg-theme-400)
+}
 
 .mainTitle {
     font-family: var(--jg-main-title-font);
@@ -206,11 +212,11 @@ section {
 }
 
 .section-page:nth-child(even)>.container::after {
-    clip-path: polygon(0% 0%, 100% 0%, 0% 100% );
+    clip-path: polygon(0% 0%, 100% 0%, 0% 100%);
 }
 
 .section-page:nth-child(odd)>.container::after {
-    clip-path: polygon(100% 100%, 100% 0%, 0% 0% );
+    clip-path: polygon(100% 100%, 100% 0%, 0% 0%);
 }
 
 /* End section divider */
@@ -244,7 +250,7 @@ footer .card {
         line-height: 2rem;
     }
 
-    .subTitle{
+    .subTitle {
         font-size: 1.7rem;
         line-height: 1.2rem;
         letter-spacing: .18rem;
@@ -263,7 +269,7 @@ footer .card {
         line-height: 2rem;
     }
 
-    .subTitle{
+    .subTitle {
         font-size: 2rem;
         line-height: 1.2rem;
         letter-spacing: .18rem;
@@ -282,12 +288,13 @@ footer .card {
         line-height: 2rem;
     }
 
-    .subTitle{
+    .subTitle {
         font-size: 2.3rem;
         line-height: 1.8rem;
         letter-spacing: .18rem;
         padding-top: 2rem;
     }
+
     .aboutImg {
         height: 400px;
     }
@@ -307,4 +314,3 @@ footer .card {
         height: 500px;
     }
 }
-
