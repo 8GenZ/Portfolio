@@ -130,6 +130,11 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
+    /* ios code */
+    /* backdrop filter for Safari */
+    -webkit-backdrop-filter: brightness(0.35) blur(3px);
+    /* backdrop filter for other browsers */
+    backdrop-filter: brightness(0.35) blur(3px);
 }
 
 .mainLogo {
