@@ -94,12 +94,10 @@ section {
     --bs-btn-border-color: var(--jg-theme-800);
     --bs-btn-hover-bg: var(--jg-theme-800);
     --bs-btn-hover-border-color: var(--jg-theme-800);
+    --bs-btn-active-bg: var(--jg-theme-800);
+    --bs-btn-active-border-color:var(--jg-theme-800);
 }
 
-.btn-primary:active,
-.btn-primary:focus {
-    --bs-btn-bg: var(--jg-theme-900);
-}
 
 .container-contact {
     padding: 2rem;
