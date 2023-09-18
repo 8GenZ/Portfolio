@@ -165,7 +165,7 @@ section {
 .mainTitle {
     font-family: var(--jg-main-title-font);
     font-size: 2em;
-    line: height 0.1;
+    line-height: 0.1;
     font-weight: 200;
 }
 
@@ -245,6 +245,15 @@ footer .card {
 /* end footer styles */
 
 /* media queries */
+
+.aboutImg{
+    position: relative;
+    background-color: var(--jg-light-color);
+    border-color: var(--jg-theme-600);
+    border-style: solid;
+    border-width: 1px;
+    box-shadow: 3px  3px 5px rgba(128, 0, 0, 0.4);
+}
 
 /* sm */
 @media (min-width: 576px) {

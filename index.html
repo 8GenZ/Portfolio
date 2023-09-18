@@ -132,12 +132,43 @@
             <div class="container text-center">
                 <h2 class="display-1 mb-5">About Me</h2>
                 <!-- replace with personal image -->
-                <img src="/img/logos/Port Photo.JPEG" height="250" class="p-3 mb-5 aboutImg" />
-                <div class="row justify-content-center">
+                <div id="carouselExampleIndicators" class="carousel slide carousel-fade " data-bs-ride="carousel">
+                    <div class="carousel-indicators ">
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                            aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner rounded-3">
+                        <div class="carousel-item active">
+                            <img src="/img/logos/Port Photo.jpeg" class="aboutImg" alt="Carousel Image 1">
+                        </div>
+                        <div class="carousel-item active">
+                            <img src="/img/carousel/IMG_0585 - Copy.JPG" class="aboutImg" alt="Carousel Image 1">
+                        </div>
+                        <div class="carousel-item active">
+                            <img src="/img/carousel/SJZA3335 - Copy.JPG" class="aboutImg" alt="Carousel Image 1">
+                        </div>
+
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+                <div class="row justify-content-center mt-3">
                     <div class="col-lg-8">
-                        I am a 19 year old Software developer based out of Winston-Salem North Carolina. I specialize in
-                        HTML, and CSS and can bring any idea you have to life. I learned how to code at Coder Foundry's
-                        technical bootcamp, and can create custom webpages using bootsrap.
+                        I am a 19 year old full stack web developer based out of Winston-Salem, North Carolina. I specialize 
+                        primarily in MVC C# development using visual studio. Please check out my resume and projects below and 
+                        feel free to contact me below!
                     </div>
                 </div>
                 <a href="/img/Resume Jon.pdf" class="btn btn-primary my-3">Download Resume </a>
@@ -331,7 +362,7 @@
                             <div class="hc-card">
                                 <picture>
                                     <source media="(min-width: 992px)" srcset="/img/logos/Code Crave.png" />
-                                    <img src="/img/logos/Code Crave.png" />
+                                    <img src="/img/Blog/SOL BLOG.png" />
                                 </picture>
                                 <div class="hc-content">
                                     <p>
@@ -372,7 +403,7 @@
                                         A full-stack bug tracker built with ASP.NET MVC, C#, and SQL.
                                     </p>
 
-                                    <a href="#" class="btn btn-primary">Learn More</a>
+                                    <a href="https://casa-calc.netlify.app" class="btn btn-primary">Learn More</a>
 
                                 </div>
                             </div>
@@ -932,7 +963,7 @@
                                 </div>
                                 <div class="carousel-inner">
                                     <div class="carousel-item active">
-                                        <img src="/img/logos/Code Crave.png" class="d-block w-100" alt="Logo">
+                                        <img src="/img/Blog/SOL BLOG.png" class="d-block w-100" alt="Logo">
                                     </div>
                                     <div class="carousel-item">
                                         <img src="/img/screenshots/BugTrackerScreen1.jpg" class="d-block w-100"
