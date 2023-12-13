@@ -177,6 +177,14 @@ section {
     font-weight: 200;
 }
 
+.link-title {
+    font-family: var(--jg-main-subtitle-font);
+    font-size: 1.28rem;
+    letter-spacing: .1rem;
+    line-height: 1.2rem;
+    font-weight: 200;
+    color: var(--jg-light-color);
+}
 /* end home section */
 
 /* main content */
@@ -270,6 +278,7 @@ footer .card {
         padding-top: 1rem;
     }
 
+
     .aboutImg {
         height: 300px;
     }
@@ -288,6 +297,8 @@ footer .card {
         letter-spacing: .18rem;
         padding-top: 1.75rem;
     }
+
+
 
     .aboutImg {
         height: 350px;
